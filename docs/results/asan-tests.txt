@@ -1,0 +1,17 @@
+Test project /Users/vikasnair/Documents/Codex/2026-10-19/files-pasted-by-the-user-codex/work/build-asan
+    Start 1: store
+1/6 Test #1: store ............................   Passed    0.85 sec
+    Start 2: concurrency
+2/6 Test #2: concurrency ......................   Passed    0.90 sec
+    Start 3: recovery
+3/6 Test #3: recovery .........................   Passed    0.97 sec
+    Start 4: network
+4/6 Test #4: network ..........................   Passed    0.82 sec
+    Start 5: socket_io
+5/6 Test #5: socket_io ........................   Passed    1.12 sec
+    Start 6: process
+6/6 Test #6: process ..........................   Passed    2.98 sec
+
+100% tests passed out of 6
+
+Total Test time (real) =   7.70 sec

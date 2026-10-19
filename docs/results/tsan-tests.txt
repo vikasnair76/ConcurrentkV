@@ -1,0 +1,17 @@
+Test project /Users/vikasnair/Documents/Codex/2026-10-19/files-pasted-by-the-user-codex/work/build-tsan
+    Start 1: store
+1/6 Test #1: store ............................   Passed    2.01 sec
+    Start 2: concurrency
+2/6 Test #2: concurrency ......................   Passed    1.70 sec
+    Start 3: recovery
+3/6 Test #3: recovery .........................   Passed    1.32 sec
+    Start 4: network
+4/6 Test #4: network ..........................   Passed    1.67 sec
+    Start 5: socket_io
+5/6 Test #5: socket_io ........................   Passed    1.00 sec
+    Start 6: process
+6/6 Test #6: process ..........................   Passed    4.89 sec
+
+100% tests passed out of 6
+
+Total Test time (real) =  12.64 sec

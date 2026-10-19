@@ -1,0 +1,5 @@
+kv_server --workers 4 --queue 1024 --durability sync --wal <fresh-file> --port 59802
+kv_bench --port 59802 --connections 8 --requests 2000 --warmup 100 --keys 1000 --value-size 64 --set-percent 20
+seed=42 connections=8 requests_per_connection=2000 warmup_per_connection=100 keys=1000 value_bytes=64 set_percent=20 seconds=0.864924 attempted_rps=18498.7 successful_rps=18498.7
+successful=16000 avg_us=411.036 p50_us=202.042 p95_us=866 p99_us=3785.54
+failed=0 avg_us=0 p50_us=0 p95_us=0 p99_us=0

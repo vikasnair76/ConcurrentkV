@@ -1,0 +1,5 @@
+kv_server --workers 4 --queue 1024 --durability shutdown --wal <fresh-file> --port 59826
+kv_bench --port 59826 --connections 8 --requests 2000 --warmup 100 --keys 1000 --value-size 64 --set-percent 20
+seed=42 connections=8 requests_per_connection=2000 warmup_per_connection=100 keys=1000 value_bytes=64 set_percent=20 seconds=0.500578 attempted_rps=31963 successful_rps=31963
+successful=16000 avg_us=215.272 p50_us=153.666 p95_us=432.209 p99_us=941.417
+failed=0 avg_us=0 p50_us=0 p95_us=0 p99_us=0

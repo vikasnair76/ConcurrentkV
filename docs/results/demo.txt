@@ -1,0 +1,19 @@
+First run commands:
+SET user:101 Vikas
+GET user:101
+EXISTS user:101
+STATS
+Responses:
+OK
+VALUE Vikas
+EXISTS 1
+STATS accepted=2 active=1 requests=3 successful=3 failed=0 get=1 set=1 delete=0 keys=1 queue_depth=0 queue_capacity=1024 rejected=0 uptime_s=0 avg_latency_us=92.5
+
+After SIGTERM and restart with same WAL:
+GET user:101
+DELETE user:101
+GET user:101
+Responses:
+VALUE Vikas
+OK
+NOT_FOUND

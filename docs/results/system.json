@@ -1,0 +1,17 @@
+{
+  "os": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "logical_cpus": 8,
+  "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)\nTarget: arm64-apple-darwin25.5.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin\n",
+  "date": "2026-10-19",
+  "ram": "8 GB",
+  "cpu_model": "Apple M3",
+  "build": "CMake Release / AppleClang",
+  "transport": "IPv4 loopback; client and server on same host",
+  "hardware": {
+    "chip_type": "Apple M3",
+    "physical_memory": "8 GB",
+    "number_processors": "proc 8:4:4:0",
+    "machine_model": "Mac15,13"
+  }
+}

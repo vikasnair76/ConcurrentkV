@@ -1,0 +1,24 @@
+[  4%] Building CXX object CMakeFiles/kvcore.dir/src/metrics.cpp.o
+[  8%] Building CXX object CMakeFiles/kvcore.dir/src/tcp_server.cpp.o
+[ 12%] Linking CXX static library libkvcore.a
+[ 28%] Built target kvcore
+[ 32%] Linking CXX executable kv_client
+[ 36%] Building CXX object CMakeFiles/kv_server.dir/src/main.cpp.o
+[ 40%] Linking CXX executable kv_bench
+[ 44%] Linking CXX executable test_store
+[ 48%] Built target test_store
+[ 52%] Built target kv_client
+[ 56%] Built target kv_bench
+[ 60%] Linking CXX executable test_recovery
+[ 64%] Linking CXX executable test_concurrency
+[ 68%] Building CXX object CMakeFiles/test_network.dir/tests/test_network.cpp.o
+[ 76%] Built target test_concurrency
+[ 76%] Built target test_recovery
+[ 80%] Linking CXX executable test_socket_io
+[ 84%] Linking CXX executable test_process
+[ 88%] Built target test_socket_io
+[ 92%] Built target test_process
+[ 96%] Linking CXX executable kv_server
+[ 96%] Built target kv_server
+[100%] Linking CXX executable test_network
+[100%] Built target test_network

@@ -1,0 +1,20 @@
+name: C++ verification
+on: [push, pull_request]
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+        sanitizer: [none, asan, tsan]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure
+        shell: bash
+        run: |
+          options=()
+          if [ '${{ matrix.sanitizer }}' = asan ]; then options+=(-DENABLE_ASAN=ON); fi
+          if [ '${{ matrix.sanitizer }}' = tsan ]; then options+=(-DENABLE_TSAN=ON); fi
+          cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug "${options[@]}"
+      - run: cmake --build build -j2
+      - run: ctest --test-dir build --output-on-failure

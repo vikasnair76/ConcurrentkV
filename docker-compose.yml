@@ -1,0 +1,11 @@
+services:
+  concurrentkv:
+    build: .
+    ports:
+      - "127.0.0.1:8080:8080"
+    volumes:
+      - kv-data:/data
+    stop_grace_period: 30s
+    restart: unless-stopped
+volumes:
+  kv-data:
